@@ -25,7 +25,7 @@ function onRequest(request, response){
 restService.get('/load', function(req, res) {
     console.log("Load");
     var result = [];
-    fs.createReadStream('batchL.csv')
+    fs.createReadStream('batch.csv')
     .pipe(csv())
     .on('data', function (data) {
 
@@ -120,7 +120,7 @@ restService.get('/update', function(request, response) {
 
     var result = [];
     
-    fs.createReadStream('batchL.csv')
+    fs.createReadStream('batch.csv')
     .pipe(csv())
     .on('data', function (data) {
 
@@ -145,7 +145,7 @@ restService.get('/update', function(request, response) {
 //    
 //    var result = [];
 //    
-//    fs.createReadStream('batchL.csv')
+//    fs.createReadStream('batch.csv')
 //    .pipe(csv())
 //    .on('data', function (data) {
 //
