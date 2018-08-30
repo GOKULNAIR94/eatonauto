@@ -63,7 +63,7 @@ function updateRecord(request, response, result, count, callback){
         
         var options = {
           "method": "GET",
-          "hostname": "eear.crm.us2.oraclecloud.com",
+          "hostname": "eear-test.crm.us2.oraclecloud.com",
           "port": null,
           "path": "/salesApi/resources/latest/partnerContacts/" + result[count].Id + "?onlyData=true",
           "headers": {
@@ -178,7 +178,7 @@ restService.get('/update', function(request, response) {
 //
 //        var options = {
 //          "method": "DELETE",
-//          "hostname": "eear.crm.us2.oraclecloud.com",
+//          "hostname": "eear-test.crm.us2.oraclecloud.com",
 //          "port": null,
 //          "path": "/salesApi/resources/latest/partnerContacts/" + result[count].Id + "/child/userdetails/" + result[count].Email + "?onlyData=true",
 //          "headers": {
@@ -202,7 +202,7 @@ restService.get('/update', function(request, response) {
 //              
 //              var options1 = {
 //                  "method": "GET",
-//                  "hostname": "eear.crm.us2.oraclecloud.com",
+//                  "hostname": "eear-test.crm.us2.oraclecloud.com",
 //                  "port": "443",
 //                  "path": "/salesApi/resources/latest/partnerContacts/" + result[count].Id + "/child/userdetails/" + result[count].Email + "?onlyData=true",
 //                  "headers": {
